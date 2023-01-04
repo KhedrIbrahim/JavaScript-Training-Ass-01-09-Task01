@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Learn JavaScript Ass-01-09-Task01</title>
+        <script>
+            // Code One will not Work because el not Recognized
+            document.getElementById("el").style.color = "red";
+        </script>
+        <script>
+            // Code Two will work because el will be Recongnized after loads the window
+            window.onload = function () {
+            document.getElementById("el").style.color = "red";
+            };
+        </script>
+    </head>
+    <body>
+        <h1 id="el">Page Title</h1>
+        <script>
+            // Code Three wii work because el is Recongnized
+            document.getElementById("el").style.color = "red";
+        </script>
+    </body>
+    </html>
